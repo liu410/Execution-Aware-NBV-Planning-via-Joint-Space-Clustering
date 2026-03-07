@@ -66,25 +66,32 @@ This repository depends on the following ROS packages.
 #### RealSense ROS Driver
 https://github.com/IntelRealSense/realsense-ros
 
+Please install Intel RealSense SDK version **2.53.1**.
+
 #### Ultralytics ROS
 https://github.com/Alpaca-zip/ultralytics_ros
 
+
 Clone them into your workspace:
-```bash
-cd ~/catkin_ws/src
-
-git clone https://github.com/IntelRealSense/realsense-ros.git
-git clone https://github.com/Alpaca-zip/ultralytics_ros.git
-```
-After cloning the repositories, please refer to the official documentation of each package to install the required dependencies.
-
-## Installation
-Create a ROS workspace and clone the repository:
 ```bash
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/src
 
-git clone https://github.com/YOUR_NAME/XXX.git
+# clone realsense-ros:
+git clone https://github.com/realsenseai/realsense-ros.git
+
+#clone yolov8:
+git clone -b noetic-devel https://github.com/Alpaca-zip/ultralytics_ros.git
+python3 -m pip install -r ultralytics_ros/requirements.txt
+```
+
+**Note:** After cloning the repositories, please refer to the official documentation of each package to install the required dependencies.
+
+## Installation
+Clone the repository:
+```bash
+cd ~/catkin_ws/src
+git clone https://github.com/liu410/Execution-Aware-NBV-Planning-via-Joint-Space-Clustering.git
 ```
 
 Make sure your ROS workspace has the following structure:
