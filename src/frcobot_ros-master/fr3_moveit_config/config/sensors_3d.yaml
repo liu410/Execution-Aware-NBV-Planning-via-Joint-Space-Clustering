@@ -1,0 +1,14 @@
+# The name of this file shouldn't be changed, or else the Setup Assistant won't detect it
+# config/sensors_3d.yaml
+sensors:
+  - sensor_plugin: occupancy_map_monitor/PointCloudOctomapUpdater
+    point_cloud_topic: /filtered_points
+    use_point_cloud_time: false
+    use_pointcloud_time: false
+    frame_subsample: 1
+    max_range: 1.5
+    max_update_rate: 1.0
+    map_frame: base_link
+    padding_offset: 0.0
+    padding_scale: 1.0
+

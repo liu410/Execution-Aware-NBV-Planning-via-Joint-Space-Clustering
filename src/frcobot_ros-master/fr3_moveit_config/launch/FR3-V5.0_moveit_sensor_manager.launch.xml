@@ -1,0 +1,5 @@
+<launch>
+  <!-- Load 3D sensor configuration for MoveIt -->
+  <rosparam command="load"
+            file="$(find fr3_moveit_config)/config/sensors_3d.yaml" />
+</launch>

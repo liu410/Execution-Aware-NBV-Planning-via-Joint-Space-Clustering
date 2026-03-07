@@ -1,0 +1,2 @@
+stamp,trial_tag,reps_size,used_mode0_members,candidates_size,use_comp,selected_idx_in_candidates,selected_psc,selected_dq_exec,score,sel_best_mode_score,sel_best_mode_dq_exec,sel_best_mode_m_limit,sel_best_mode_m_sing,sel_best_mode_m_exec,ik_success_count,ik_fail_count,planning_ok,exec_ok,traj_points,planning_time_sec,ee_x,ee_y,ee_z,cam_x,cam_y,cam_z
+1772331717,action_mode,8,1,3,1,0,0.600574732,4.309392514,4.069162622,2.159853697,4.774502754,1,1,1,3,0,1,1,128,4.705438375,-0.01224859,-0.308876285,0.55321157,-0.068041861,-0.300918698,0.343791097

@@ -1,0 +1,52 @@
+<!--
+  octomap_server.launch
+
+  Launch file for occupancy mapping using a filtered in-hand depth point cloud.
+
+  Input:
+    /filtered_points
+
+  Output:
+    OctoMap occupancy representation in frame "base_link"
+
+  Notes:
+    - Designed for NBV planning rather than high-frequency mapping
+    - Unnecessary map outputs are disabled to reduce runtime overhead
+-->
+<launch>
+
+  <node pkg="octomap_server"
+        type="octomap_server_node"
+        name="octomap_server"
+        output="screen">
+
+    <!-- Voxel map resolution (meters) -->
+    <param name="resolution" value="0.01"/>
+
+    <!-- Maximum sensor range used for occupancy update (meters) -->
+    <param name="sensor_model/max_range" value="2.0"/>
+
+    <!-- Map update rate; high frequency is unnecessary for NBV -->
+    <param name="max_update_rate" value="2.0"/>
+
+    <!-- Probabilistic sensor model parameters -->
+    <param name="sensor_model/hit" value="0.7"/>
+    <param name="sensor_model/miss" value="0.4"/>
+    <param name="sensor_model/max" value="0.97"/>
+    <param name="sensor_model/min" value="0.12"/>
+    <param name="sensor_model/threshold" value="0.5"/>
+
+    <!-- Global reference frame of the occupancy map -->
+    <param name="frame_id" value="base_link"/>
+
+    <!-- Input filtered point cloud -->
+    <remap from="cloud_in" to="/filtered_points"/>
+
+    <!-- Disable unnecessary outputs to reduce overhead -->
+    <param name="publish_point_cloud" value="false"/>
+    <param name="publish_binary_map" value="false"/>
+    <param name="publish_full_map" value="false"/>
+
+  </node>
+
+</launch>
