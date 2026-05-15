@@ -1,6 +1,6 @@
 # Execution-Aware NBV Planning via Joint-Space Clustering
 
-ROS implementation of an execution-aware Next-Best-View (NBV) planning framework for apple perception under orchard-like occlusion.
+ROS implementation of an execution-aware Next-Best-View (NBV) planning framework for apple perception in orchard-like environments.
 
 This repository accompanies the manuscript **"Execution-Aware NBV Planning via Joint-Space Clustering for Apple Perception in Orchard-Like Environments"**. The system is designed for an eye-in-hand RGB-D camera mounted on a 6-DoF manipulator, where perception-favorable viewpoints must also be feasible, safe, and efficient to execute.
 
