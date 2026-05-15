@@ -230,6 +230,7 @@ cd ~/catkin_ws/src/nbv_ros/experiment
 python3 merge_experiments.py
 python3 make_three_line_table.py
 python3 paired_trial_analysis.py
+python3 make_combined_box_and_slope.py
 ```
 
 #### Running New Experiments
