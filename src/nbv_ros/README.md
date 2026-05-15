@@ -265,12 +265,9 @@ If a CSV file contains multiple rows because MoveIt attempted planning more than
 
 ## Citation
 
-If you use this repository in academic work, please cite the accompanying manuscript:
+The accompanying manuscript is currently under review. Citation information will be updated after publication.
 
-```bibtex
-# The accompanying manuscript is currently under review.
-# Citation information will be updated after publication.
-```
+If you use this repository before the paper is published, please cite this repository or contact the authors for the latest citation information.
 
 ## Notes and Limitations
 
