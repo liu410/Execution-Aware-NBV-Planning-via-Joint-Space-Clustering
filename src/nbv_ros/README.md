@@ -265,9 +265,20 @@ If a CSV file contains multiple rows because MoveIt attempted planning more than
 
 ## Citation
 
-The accompanying manuscript is currently under review. Citation information will be updated after publication.
+If you use this repository in academic work, please cite the published article:
 
-If you use this repository before the paper is published, please cite this repository or contact the authors for the latest citation information.
+```bibtex
+@article{niu2026execution,
+  title = {Execution-Aware NBV Planning via joint-space clustering for apple perception in orchard-like environments},
+  author = {Niu, Jinxing and Liu, Chang and Yang, Jie and Wang, Yuhang and Ma, Dingyi and Zhang, Tao},
+  journal = {Smart Agricultural Technology},
+  volume = {14},
+  pages = {102220},
+  year = {2026},
+  doi = {10.1016/j.atech.2026.102220},
+  url = {https://doi.org/10.1016/j.atech.2026.102220}
+}
+```
 
 ## Notes and Limitations
 
